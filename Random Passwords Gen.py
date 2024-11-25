@@ -5,12 +5,9 @@ print("WELCOME")
 import random
 import string
 
-#the shuffle function defined by passing the password,
-# the function returns a string in single quotation which is joined
+#the shuffle function -created for shuffling the password,
 def shuffle(strings):
-    templist = list(strings)#As shuffle function works with mutable.
-# Lists are mutable,A list object is a collection which is ordered and changeable.
-# so Im creating a list object with list()
+    templist = list(strings)
     random.shuffle(templist)
     return templist
 
