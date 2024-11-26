@@ -16,21 +16,21 @@ alphabets = list(string.ascii_letters)
 #print(alphabets)
 letters = int(input("how many letters you require in your password ?: "))
 myalphalist = random.choices(alphabets,k=letters)
-print(f"Chosen Alphabets list = {myalphalist}")
+#print(f"Chosen Alphabets list = {myalphalist}")
 
 #**Password punctuation generation**
 specialchars = list(string.punctuation)
 #print(specialchars)
 punctuations = int(input("how many special chars you require in your password ?: "))
 myspecialcharslist = random.choices(specialchars,k=punctuations)
-print(f"Chosen Punctuation list = {myspecialcharslist}")
+#print(f"Chosen Punctuation list = {myspecialcharslist}")
 
 #**Password numbers generation**
 Numbers = list(string.digits)
 #print(Numbers)
 digits= int(input("how many special chars you require in your password ?: "))
 mydigitslist = random.choices(Numbers,k=digits)
-print(f"Chosen Digits list = {mydigitslist}")
+#print(f"Chosen Digits list = {mydigitslist}")
 
 #Concatenating the characters, digits and special chars in the password
 password1 = myalphalist + myspecialcharslist + mydigitslist
