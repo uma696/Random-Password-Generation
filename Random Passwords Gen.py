@@ -1,4 +1,4 @@
-print("RANDOM PASSWORD GENERATION")
+print("RANDOM PASSWORD GENERATION DEPENDING ON USER REQUIREMENT")
 
 print("WELCOME")
 
@@ -11,26 +11,20 @@ def shuffle(strings):
     random.shuffle(templist)
     return templist
 
-#**Password letters generation**
-alphabets = list(string.ascii_letters)
-#print(alphabets)
+#**Password letters generation with user requirement**
 letters = int(input("how many letters you require in your password ?: "))
+alphabets = list(string.ascii_letters)
 myalphalist = random.choices(alphabets,k=letters)
-#print(f"Chosen Alphabets list = {myalphalist}")
 
-#**Password numbers generation**
-Numbers = list(string.digits)
-#print(Numbers)
+#**Password numbers generation with user requirement**
 digits= int(input("how many digits/numbers you require in your password ?: "))
+Numbers = list(string.digits)
 mydigitslist = random.choices(Numbers,k=digits)
-#print(f"Chosen Digits list = {mydigitslist}")
 
-#**Password punctuation generation**
-specialchars = list(string.punctuation)
-#print(specialchars)
+#**Password punctuation generation with user requirement**
 punctuations = int(input("how many special chars you require in your password ?: "))
+specialchars = list(string.punctuation)
 myspecialcharslist = random.choices(specialchars,k=punctuations)
-#print(f"Chosen Punctuation list = {myspecialcharslist}")
 
 #Concatenating the characters, digits and special chars in the password
 password1 = myalphalist + myspecialcharslist + mydigitslist
@@ -42,10 +36,4 @@ password = shuffle(password1)
 Random_password = ''.join(password)
 
 print(f"Generated password : {Random_password}")
-
-
-
-
-
-
 
